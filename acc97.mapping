@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<mapping>
+	<map>
+		<framework name="inputx" out_port_id="0"/>
+		<IR id="0" name="inputx" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="add" out_port_id="0"/>
+		<IR id="1" name="Conv2D" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="Relu" out_port_id="0"/>
+		<IR id="2" name="Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="MaxPool" out_port_id="0"/>
+		<IR id="3" name="MaxPool" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="add_1" out_port_id="0"/>
+		<IR id="4" name="Conv2D_1" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="Relu_1" out_port_id="0"/>
+		<IR id="5" name="Relu_1" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="MaxPool_1" out_port_id="0"/>
+		<IR id="6" name="MaxPool_1" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="add_2" out_port_id="0"/>
+		<IR id="7" name="Conv2D_2" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="Relu_2" out_port_id="0"/>
+		<IR id="8" name="Relu_2" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Reshape" out_port_id="0"/>
+		<IR id="10" name="Reshape" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="add_3" out_port_id="0"/>
+		<IR id="11" name="MatMul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="Relu_3" out_port_id="0"/>
+		<IR id="12" name="Relu_3" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="MaxPool_2" out_port_id="0"/>
+		<IR id="9" name="MaxPool_2" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="fuckyou" out_port_id="0"/>
+		<IR id="13" name="MatMul_1" out_port_id="3"/>
+	</map>
+</mapping>
